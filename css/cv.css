@@ -72,6 +72,40 @@ box-shadow: 0px 0px 5px 5px #656565;
 .section{
 	padding-top: 10%;
 }
+
+/*******************************************
+EXPERIENCE
+*******************************************/
+.experience{
+  margin-top: 20px;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+.experience:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 25px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #ec7263;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#ec7263), color-stop(89%,#ec7263), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.experience li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+
 .description{
   width: 80%;
   display: inline-block;
@@ -105,7 +139,7 @@ box-shadow: 0px 0px 5px 5px #656565;
   width: 10%;
   background: #fff;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 700;
   display: inline-block;
 }
