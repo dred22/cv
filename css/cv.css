@@ -1,12 +1,17 @@
-[class*="col-"]{
+/*[class*="col-"]{
 	border: 1px solid green;
-}
+}*/
 /*
 * .col-md- = 970px
 * .col-lg- = 1170px
 * .col-sm- = 750px
 */
-
+body{
+  background-color: #F0E8E8;
+}
+.container{
+  background-color: white;
+}
 .nowrap{
   white-space: nowrap;
 }
@@ -14,7 +19,7 @@
   position: relative;
 }
 .entete figure{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   position: absolute;
   z-index:1;
   top: 0;
