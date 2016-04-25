@@ -127,7 +127,7 @@ EXPERIENCE
   position: relative;
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid #ddd;
-
+  border-radius: 3px 3px;
 
 
 }
@@ -177,6 +177,8 @@ SKILLS
     text-overflow: ellipsis;
     font-size: 1.3em;
     font-weight: 600;
+    border-radius: 3px 3px;
+    transition: transform .9s; 
 }
 .skills-legend{
   margin-top: 15px;
@@ -227,7 +229,19 @@ SKILLS
   text-align: left;
   padding-left: 10px;
 }
-
+/****************************
+ additionalInfos
+*****************************/
+.additionalInfos{
+  background: #F7FFE8;
+  overflow: hidden;
+  clear: both;
+}
+.additionalInfos h2{
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+}
 
 @media (max-width: 1050px) {
   .entete h1{

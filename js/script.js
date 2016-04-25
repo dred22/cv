@@ -16,7 +16,7 @@ var callback = function(){
     }, 2000);
 	});*/
 };
-$(document).ready();
+//$(document).ready();
 
 var resize;
 window.onresize = function() {
@@ -26,10 +26,24 @@ window.onresize = function() {
 	}, 100);
 };
 $(function(){
+	var flyTitle = $('.flyTitle');
+	var originOffset = flyTitle.offset().left;
+	var newLeftPosition = $(document).width();
+	flyTitle.offset({left:newLeftPosition}).css({opacity:0}).
+		fadeTo(4500,1);
+	var interval = setInterval(function(){
+		newLeftPosition = newLeftPosition - 2;
+		flyTitle.offset({left:newLeftPosition});
+		if(newLeftPosition < originOffset){
+			clearTimeout(interval);
+		}
+	}, .5);
+
 	callback();
 	$('.description')
 		.hide()
 		.each(function(i){
 			$(this).show(700*(i+1));
 		});
+
 });

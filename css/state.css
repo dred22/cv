@@ -4,3 +4,7 @@
 .icon:hover{
 	transform: rotate(-360deg);
 }
+.skills li:hover{
+	/*margin-left: 20px;*/
+	transform: rotateX(360deg);
+}
