@@ -71,6 +71,7 @@ box-shadow: 0px 0px 5px 5px #656565;
 	width:22px;
 	height:22px;
 	display:inline-block;
+  transition: transform .3s;
 	
 }
 .facebook{
@@ -117,7 +118,7 @@ EXPERIENCE
 }
 
 .description{
-
+  
   margin-left: 10px;
   width: 80%;
   display: inline-block;
@@ -166,11 +167,11 @@ EXPERIENCE
 SKILLS
 *****************************/
 .skills li{
-    height: 30px;
+    /*height: 30px;*/
     background: var(--roug-back-color);
     /*color: #fff;*/
-    padding: 5px 10px;
-    margin-bottom: 5px;
+    padding: 2px 10px;
+    margin-bottom: 4px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -178,7 +179,7 @@ SKILLS
     font-weight: 600;
 }
 .skills-legend{
-  margin-top: 20px;
+  margin-top: 15px;
   opacity: 0.8;
 }
 .skills-legend:before{

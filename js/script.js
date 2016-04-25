@@ -16,7 +16,7 @@ var callback = function(){
     }, 2000);
 	});*/
 };
-$(document).ready(callback);
+$(document).ready();
 
 var resize;
 window.onresize = function() {
@@ -25,3 +25,11 @@ window.onresize = function() {
 		callback();
 	}, 100);
 };
+$(function(){
+	callback();
+	$('.description')
+		.hide()
+		.each(function(i){
+			$(this).show(700*(i+1));
+		});
+});
