@@ -6,8 +6,12 @@
 * .col-lg- = 1170px
 * .col-sm- = 750px
 */
+:root {
+  --my-back-color: #E0E0E0;
+  --roug-back-color:#ec7263;
+}
 body{
-  background-color: #eee;
+  background-color: var(--my-back-color);
 }
 .container{
   background-color: white;
@@ -46,14 +50,14 @@ box-shadow: 0px 0px 5px 5px #656565;
 .entete h1{
 	font-size: 2.8em;
 	text-transform: uppercase;
-	border-top: 5px double #ec7263;
-	border-bottom: 5px double #ec7263;
+	border-top: 5px double var(--roug-back-color);
+	border-bottom: 5px double var(--roug-back-color);
 	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 15px 0;
 	white-space: nowrap;
-  color: #ec7263;
+  color: var(--roug-back-color);
   text-shadow: 2px 2px grey;
 }
 .entete address{
@@ -92,13 +96,13 @@ EXPERIENCE
   top: 0;
   content: ' ';
   display: block;
-  background: #ec7263;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #ec7263 7%, #ec7263 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#ec7263), color-stop(89%,#ec7263), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#ec7263 7%,#ec7263 89%,#ffffff 100%);
+  background: var(--roug-back-color);
+  background: -moz-linear-gradient(top,  #ffffff 0%, var(--roug-back-color) 7%, var(--roug-back-color) 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,var(--roug-back-color)), color-stop(89%,var(--roug-back-color)), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,var(--roug-back-color) 7%,var(--roug-back-color) 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,var(--roug-back-color) 7%,var(--roug-back-color) 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,var(--roug-back-color) 7%,var(--roug-back-color) 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,var(--roug-back-color) 7%,var(--roug-back-color) 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 .experience li{
@@ -109,14 +113,18 @@ EXPERIENCE
 }
 
 .description{
+
   margin-left: 10px;
   width: 80%;
   display: inline-block;
-  background: #eee;
+  background: var(--my-back-color);
   margin-bottom: 10px;
   position: relative;
   padding: 10px 10px 0 10px;
   border-bottom: 1px solid #ddd;
+
+
+
 }
 .description:after {
   content: '';
@@ -127,13 +135,13 @@ EXPERIENCE
   height: 0;
   width: 0;
   border: solid transparent;
-  border-right-color: #eee;
+  border-right-color: var(--my-back-color);
   border-width: 8px;
   pointer-events: none;
 }
 .description h2{
   font-size: 1.5em;
-  color: #ec7263;
+  color: var(--roug-back-color);
 }
 .description h3{
   font-weight: bold;
@@ -141,7 +149,7 @@ EXPERIENCE
 .year{
   width: 8.5%;
   min-width: 50px;
-  background:#ec7263;
+  background:var(--roug-back-color);
   border-radius: 50%;
   padding: 10px;
   font-size: 1em;
@@ -149,6 +157,23 @@ EXPERIENCE
   display: inline-block;
   transition: transform .3s;
 }
+/****************************
+SKILLS
+*****************************/
+.skills li{
+    height: 30px;
+    background: #F0563D;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
 
 @media (max-width: 1050px) {
   .entete h1{
