@@ -45,5 +45,10 @@ $(function(){
 		.each(function(i){
 			$(this).show(700*(i+1));
 		});
+	$('header').hide();
+	$('header').show(1200);
+	$('.skills li').each(function(){
+		$(this).css('background-color','rgb(236, 114, 99)');
+	})
 
 });
